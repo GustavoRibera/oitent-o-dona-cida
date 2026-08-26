@@ -1,0 +1,7 @@
+# Claude Code
+.claude/worktrees/
+
+# Sistema
+Thumbs.db
+desktop.ini
+.DS_Store
