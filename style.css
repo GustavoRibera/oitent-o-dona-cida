@@ -513,29 +513,17 @@
     z-index:0;
     overflow:visible;
   }
-  .deco-hero{
-    width:clamp(150px, 24vw, 300px);
-    aspect-ratio:6/5;
-    opacity:0.9;
-  }
-  .deco-hero.tl{ top:-14px; left:-26px; }
-  .deco-hero.tr{ top:-14px; right:-26px; transform:scaleX(-1); }
-  .deco-hero.bl{ bottom:-14px; left:-26px; transform:scaleY(-1); opacity:0.62; }
-  .deco-hero.br{ bottom:-14px; right:-26px; transform:scale(-1,-1); opacity:0.62; }
 
   /* o conteúdo do hero fica acima das folhagens */
-  .hero > :not(.deco){ position:relative; z-index:1; }
 
   .deco-card{
     width:clamp(96px, 15vw, 170px);
     aspect-ratio:6/5;
     opacity:0.5;
   }
-  .deco-card.tl{ top:-10px; left:-10px; }
   .deco-card.tr{ top:-10px; right:-10px; transform:scaleX(-1); }
   .deco-card.bl{ bottom:-10px; left:-10px; transform:scaleY(-1); }
-  .deco-card.br{ bottom:-10px; right:-10px; transform:scale(-1,-1); }
-  .menu-hero > :not(.deco), .gift-card > :not(.deco){ position:relative; z-index:1; }
+  .gift-card > :not(.deco){ position:relative; z-index:1; }
 
   /* divisores de folhas */
   .menu-div svg{ width:120px; height:34px; display:block; margin:0 auto; overflow:visible; }
@@ -581,17 +569,7 @@
     .gift-card h3{ font-size:21px; }
     .pix-box{ width:100%; border-radius:16px; padding:16px 18px; }
     .copy-btn{ padding:13px 20px; }
-    .deco-hero{ width:clamp(120px, 40vw, 170px); }
-    .deco-hero.bl, .deco-hero.br{ display:none; }
-    .deco-card{ width:88px; opacity:0.42; }
-    .menu-div svg{ width:96px; }
-    .menu-card{ padding:30px 20px; }
-    .menu-hero{ padding:30px 22px 28px; }
-    .menu-hero-title{ font-size:40px; }
-    .menu-hero-sub{ font-size:16px; }
-    footer{ padding:40px 20px 48px; }
-  }
-
+  
   /* Telas bem estreitas (iPhone SE e afins) */
   @media (max-width:360px){
     .wrap{ padding:0 16px; }
